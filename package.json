@@ -1,0 +1,48 @@
+{
+  "name": "tdd_katas",
+  "version": "1.0.0",
+  "description": "1. You are not allowed to write any production code unless it is to make a failing unit test pass. 2. You are not allowed to write any more of a unit test than is sufficient to fail; and compilation failures are failures. 3. You are not allowed to write any more production code than is sufficient to pass the one failing unit test.",
+  "main": "index.js",
+  "author": "abdelwahed houbouby <ahoubouby@gmail.com>",
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "none"
+  },
+  "scripts": {
+    "test": "jest --coverage",
+    "watch": "jest --watch"
+  },
+  "repository": {
+    "build":":",
+    "release":":",
+    "type": "git",
+    "url": "git+https://github.com/ahoubouby/tdd_katas_js.git"
+  },
+  "keywords": ["test","jest", "TDD", "javascript", "katas"],
+  "bugs": {
+    "url": "https://github.com/ahoubouby/tdd_katas_js/issues"
+  },
+  "homepage": "https://github.com/ahoubouby/tdd_katas_js#readme",
+  "dependencies": {
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "jest": "^26.0.1"
+  },
+  "jest": {
+    "roots": [
+      "<rootDir>/node_modules/",
+      "<rootDir>/src/"
+    ],
+    "resetMocks": true,
+    "resetModules": true,
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
+  }
+}
