@@ -1,9 +1,5 @@
 const verifyPass = (input, rules) => {
-  if (rules.length === 0) {
-    return true;
-  }
-
-  return false;
+  return rules.reduce((acc, cv) => acc && cv(input), true);
 };
 module.exports = {
   verifyPass,
