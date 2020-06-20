@@ -21,4 +21,9 @@ describe("verifyPass", () => {
     const result = verifyPass("any input", [(input) => true, (input) => true]);
     expect(result).toBeTruthy();
   });
+
+  it("real case string with lenght > 4 caractere, passed", () => {
+    const result = verifyPass("abdelwahed", [(input) => input.length > 4]);
+    expect(result).toBeTruthy();
+  });
 });
