@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/ahoubouby/tdd_katas_js#readme",
   "dependencies": {
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "jest": "^26.0.1"
